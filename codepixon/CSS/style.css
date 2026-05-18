@@ -1,0 +1,25 @@
+body {
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+    min-height: 97vh;
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    grid-area: footer;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.1);
+}

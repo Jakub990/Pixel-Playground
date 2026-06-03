@@ -13,7 +13,7 @@
         <?php include 'partials/header.php'; ?>
     </header>
     <main>
-
+        <h1>Profiel</h1>
     </main>
     <footer>
         <?php include 'partials/footer.php'; ?>

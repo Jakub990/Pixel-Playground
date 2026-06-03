@@ -14,7 +14,20 @@ header {
     align-items: center;
     padding: 15px;
     position: relative;
+    background-image: linear-gradient(to right, rgb(47, 47, 47), rgb(105, 105, 105));
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+main {
+    grid-area: main;
+    padding: 20px;
 }
 
 footer {
@@ -22,4 +35,9 @@ footer {
     padding: 20px;
     text-align: center;
     box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to left, rgb(47, 47, 47), rgb(105, 105, 105));
+}
+footer h1 {
+    color: white;
+    font-size: 14px;
 }

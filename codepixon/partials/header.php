@@ -2,12 +2,12 @@
 <img class="logo" src="images/Logo-bg.png">
 
 <nav>
-    <a href="#">Home</a>
-    <a href="#">Spellen</a>
-    <a href="#">Login</a>
-    <a href="#">Registreer</a>
-    <a href="#">Scores</a>
-    <a href="#">Profiel</a>
+    <a href="index.php">Home</a>
+    <a href="spellen.php">Spellen</a>
+    <a href="login.php">Login</a>
+    <a href="registreer.php">Registreer</a>
+    <a href="scores.php">Scores</a>
+    <a href="profiel.php">Profiel</a>
 </nav>
 
 

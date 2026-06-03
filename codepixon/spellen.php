@@ -13,7 +13,7 @@
         <?php include 'partials/header.php'; ?>
     </header>
     <main>
-        <h1>Spellenpoepie kakie</h1>
+        <h1>Spellenpoepie kaki</h1>
     </main>
     <footer>
         <?php include 'partials/footer.php'; ?>

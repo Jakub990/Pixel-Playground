@@ -1,1 +1,1 @@
-<h1>©gay</h1>
+<img class="logo" src="images/Logo-bg.png">

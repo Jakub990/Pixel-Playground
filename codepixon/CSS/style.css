@@ -33,11 +33,11 @@ main {
 footer {
     grid-area: footer;
     padding: 20px;
-    text-align: center;
+    text-align: right;
     box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.1);
     background-image: linear-gradient(to left, rgb(47, 47, 47), rgb(105, 105, 105));
 }
-footer h1 {
-    color: white;
-    font-size: 14px;
+
+footer img {
+    width: 10%;
 }

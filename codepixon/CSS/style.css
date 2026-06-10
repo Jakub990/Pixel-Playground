@@ -1,10 +1,12 @@
 body {
+    display: grid;
     grid-template-areas:
         "header"
         "main"
         "footer";
     grid-template-rows: auto 1fr auto;
     min-height: 97vh;
+    background-color: #b3b3b3;
 }
 
 header {
@@ -19,10 +21,14 @@ header {
 }
 
 header nav a {
-    color: white;
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
+    background-image: linear-gradient(to left, rgb(161, 255, 250), rgb(252, 255, 161), rgb(255, 184, 221));
+    /* voor ondersteuning in browsers*/
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 main {
@@ -36,8 +42,14 @@ footer {
     text-align: center;
     box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.1);
     background-image: linear-gradient(to left, rgb(47, 47, 47), rgb(105, 105, 105));
+
 }
+
 footer h1 {
-    color: white;
     font-size: 14px;
+    background-image: linear-gradient(to left, rgb(161, 255, 250), rgb(252, 255, 161), rgb(255, 184, 221));
+    /* voor ondersteuning in browsers*/
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }

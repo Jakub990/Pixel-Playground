@@ -313,3 +313,121 @@ footer h1 {
 .action-btn:active {
     transform: translateY(0);
 }
+
+/* Connect 4 (Vier op een rij) Styling */
+#connect4-game {
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #ffffff 0%, #f5f9fc 100%);
+    border-radius: 16px;
+    box-shadow: 0 12px 35px rgba(30, 60, 114, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #e2edf7;
+}
+
+.connect4-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.column-indicators {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 100%;
+    max-width: 490px;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+
+.indicator-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #4facfe;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+    outline: none;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.indicator-btn:hover:not(:disabled) {
+    transform: translateY(3px);
+    color: #1e3c72;
+}
+
+.indicator-btn:disabled {
+    color: #cbd5e0;
+    cursor: not-allowed;
+}
+
+.connect4-board {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 8px;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    padding: 15px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3), inset 0 2px 5px rgba(255, 255, 255, 0.2);
+    width: 100%;
+    max-width: 490px;
+    box-sizing: border-box;
+}
+
+.connect4-board .slot {
+    aspect-ratio: 1;
+    background-color: #b3b3b3;
+    border-radius: 50%;
+    box-shadow: inset 0 4px 6px rgba(0,0,0,0.3);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.2s ease;
+}
+
+.connect4-board .slot:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Tokens and Fall Animation */
+.connect4-board .slot.red-token {
+    background: radial-gradient(circle at 35% 35%, #ff5e62, #ff2a2e);
+    box-shadow: inset 0 -3px 5px rgba(0,0,0,0.4), 0 4px 6px rgba(0,0,0,0.3);
+    animation: token-fall 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.connect4-board .slot.yellow-token {
+    background: radial-gradient(circle at 35% 35%, #ffe259, #ffa751);
+    box-shadow: inset 0 -3px 5px rgba(0,0,0,0.4), 0 4px 6px rgba(0,0,0,0.3);
+    animation: token-fall 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@keyframes token-fall {
+    0% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+

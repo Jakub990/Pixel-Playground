@@ -382,7 +382,9 @@ footer h1 {
     transform: translateY(0);
 }
 
-/* Connect 4 (Vier op een rij) Styling */
+/* ==========================================================================
+   Connect 4 styling
+   ========================================================================== */
 #connect4-game {
     max-width: 650px;
     margin: 50px auto;

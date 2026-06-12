@@ -53,3 +53,267 @@ footer h1 {
     background-clip: text;
     color: transparent;
 }
+ .key-btn {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+.key-btn:disabled {
+    background: #e0e0e0;
+    color: #a0a0a0;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+.key-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+/* Galgje (Hangman) styling */
+#hangman-game {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f8ff 100%);
+    border-radius: 16px;
+    box-shadow: 0 12px 35px rgba(79, 172, 254, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #e0f0ff;
+}
+
+#word-display {
+    color: #2c3e50;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+#keyboard {
+    justify-content: center;
+}
+
+/* Spellen Pagina Cards */
+.game-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px 25px 30px;
+    max-width: 320px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px 0;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.game-card h2 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 24px;
+}
+
+.game-card p {
+    color: #555;
+    font-size: 15px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.play-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+    color: white !important;
+    text-decoration: none !important;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(79, 172, 254, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.play-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(79, 172, 254, 0.6);
+}
+
+/* Tic Tac Toe styling */
+#tictactoe-game {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #ffffff 0%, #f5f9fc 100%);
+    border-radius: 16px;
+    box-shadow: 0 12px 35px rgba(79, 172, 254, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #e2edf7;
+}
+
+.mode-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.mode-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #4a5568;
+    background-color: #edf2f7;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.mode-btn.active {
+    background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+    color: white;
+    box-shadow: 0 4px 10px rgba(79, 172, 254, 0.3);
+}
+
+.mode-btn:hover:not(.active) {
+    background-color: #e2e8f0;
+}
+
+.stats-panel {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #4a5568;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.stat-box strong {
+    margin-left: 5px;
+    color: #2d3748;
+}
+
+#difficulty-badge {
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: white !important;
+}
+
+.badge-easy { background-color: #48bb78; }
+.badge-medium { background-color: #ecc94b; color: #2d3748 !important; }
+.badge-hard { background-color: #ed8936; }
+.badge-unbeatable { background-color: #e53e3e; }
+
+#game-status {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #2d3748;
+    margin-bottom: 20px;
+    min-height: 30px;
+}
+
+.board-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 0; /* No gaps so borders meet */
+    margin-bottom: 25px;
+    background-color: transparent;
+    padding: 0;
+}
+
+.cell {
+    background-color: transparent;
+    border: none;
+    font-size: 2.8rem;
+    font-weight: 800;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    outline: none;
+}
+
+.cell:hover:not(:disabled) {
+    background-color: rgba(79, 172, 254, 0.08);
+}
+
+.cell:disabled {
+    cursor: not-allowed;
+}
+
+/* Tic Tac Toe classic grid lines (intersecting border lines) */
+/* Horizontal borders */
+.cell[data-index="0"], .cell[data-index="1"], .cell[data-index="2"],
+.cell[data-index="3"], .cell[data-index="4"], .cell[data-index="5"] {
+    border-bottom: 5px solid #2c3e50;
+}
+
+/* Vertical borders */
+.cell[data-index="0"], .cell[data-index="3"], .cell[data-index="6"],
+.cell[data-index="1"], .cell[data-index="4"], .cell[data-index="7"] {
+    border-right: 5px solid #2c3e50;
+}
+
+/* X and O styles */
+.cell.x-mark {
+    color: #4facfe;
+    text-shadow: 0 0 8px rgba(79, 172, 254, 0.4);
+}
+
+.cell.o-mark {
+    color: #f56565;
+    text-shadow: 0 0 8px rgba(245, 101, 101, 0.4);
+}
+
+.action-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(79, 172, 254, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.action-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(79, 172, 254, 0.6);
+}
+
+.action-btn:active {
+    transform: translateY(0);
+}

@@ -1,3 +1,6 @@
+/* ==========================================================================
+   Basis Layout & Algemene Stijlen (Samengevoegd met prioriteit voor bovenste)
+   ========================================================================== */
 body {
     display: grid;
     grid-template-areas:
@@ -5,10 +8,28 @@ body {
         "main"
         "footer";
     grid-template-rows: auto 1fr auto;
-    min-height: 97vh;
-    background-color: #b3b3b3;
+    min-height: 97vh;             
+    background-color: #b3b3b3;    
+    color: #ffffff;               
+    font-family: Arial, sans-serif;
+    margin: 0;
 }
 
+main {
+    grid-area: main;
+    padding: 20px;                
+    max-width: 800px;             
+    margin: 0 auto;
+    width: 100%;
+}
+
+h1, h2, h3 {
+    color: #4facfe; 
+}
+
+/* ==========================================================================
+   Header & Navigatie
+   ========================================================================== */
 header {
     grid-area: header;
     display: flex;
@@ -27,29 +48,29 @@ header nav a {
     background-image: linear-gradient(to left, rgb(161, 255, 250), rgb(252, 255, 161), rgb(255, 184, 221));
 }
 
-main {
-    grid-area: main;
-    padding: 20px;
-}
-
+/* ==========================================================================
+   Footer
+   ========================================================================== */
 footer {
     grid-area: footer;
     padding: 20px;
     text-align: right;
     box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.1);
     background-image: linear-gradient(to left, rgb(47, 47, 47), rgb(105, 105, 105));
-
 }
 
 footer h1 {
     font-size: 14px;
     background-image: linear-gradient(to left, rgb(161, 255, 250), rgb(252, 255, 161), rgb(255, 184, 221));
-    /* voor ondersteuning in browsers*/
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
- .key-btn {
+
+/* ==========================================================================
+   Knoppen & Algemene UI Elementen
+   ========================================================================== */
+.key-btn {
     width: 40px;
     height: 40px;
     padding: 0;
@@ -66,6 +87,7 @@ footer h1 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
 }
+
 .key-btn:disabled {
     background: #e0e0e0;
     color: #a0a0a0;
@@ -73,38 +95,59 @@ footer h1 {
     box-shadow: none;
     transform: none;
 }
+
 .key-btn:hover:not(:disabled) {
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
 }
 
-/* Galgje (Hangman) styling */
-#hangman-game {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 40px;
-    background: linear-gradient(135deg, #ffffff 0%, #f0f8ff 100%);
-    border-radius: 16px;
-    box-shadow: 0 12px 35px rgba(79, 172, 254, 0.3);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border: 2px solid #e0f0ff;
-}
-
-#word-display {
-    color: #2c3e50;
+.knop {
+    display: inline-block;
+    background-color: #4facfe;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    margin-right: 10px;
 }
 
-#keyboard {
-    justify-content: center;
+.knop:hover {
+    background-color: #00f2fe;
 }
 
-/* Spellen Pagina Cards */
+/* ==========================================================================
+   Content Blokken & Tabellen
+   ========================================================================== */
+.welkom, .info-sectie, .profiel-blok {
+    background-color: #333333;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.score-tabel {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: #333333;
+}
+
+.score-tabel th, .score-tabel td {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: left;
+}
+
+.score-tabel th {
+    background-color: #4facfe;
+    color: #fff;
+}
+
+/* ==========================================================================
+   Spellen Pagina Cards
+   ========================================================================== */
 .game-card {
     background: #ffffff;
     border-radius: 12px;
@@ -152,7 +195,36 @@ footer h1 {
     box-shadow: 0 6px 15px rgba(79, 172, 254, 0.6);
 }
 
-/* Tic Tac Toe styling */
+/* ==========================================================================
+   Galgje (Hangman) Styling
+   ========================================================================== */
+#hangman-game {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f8ff 100%);
+    border-radius: 16px;
+    box-shadow: 0 12px 35px rgba(79, 172, 254, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #e0f0ff;
+}
+
+#word-display {
+    color: #2c3e50;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+#keyboard {
+    justify-content: center;
+}
+
+/* ==========================================================================
+   Tic Tac Toe Styling
+   ========================================================================== */
 #tictactoe-game {
     max-width: 600px;
     margin: 50px auto;
@@ -242,7 +314,7 @@ footer h1 {
     display: grid;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
-    gap: 0; /* No gaps so borders meet */
+    gap: 0;
     margin-bottom: 25px;
     background-color: transparent;
     padding: 0;
@@ -269,20 +341,16 @@ footer h1 {
     cursor: not-allowed;
 }
 
-/* Tic Tac Toe classic grid lines (intersecting border lines) */
-/* Horizontal borders */
 .cell[data-index="0"], .cell[data-index="1"], .cell[data-index="2"],
 .cell[data-index="3"], .cell[data-index="4"], .cell[data-index="5"] {
     border-bottom: 5px solid #2c3e50;
 }
 
-/* Vertical borders */
 .cell[data-index="0"], .cell[data-index="3"], .cell[data-index="6"],
 .cell[data-index="1"], .cell[data-index="4"], .cell[data-index="7"] {
     border-right: 5px solid #2c3e50;
 }
 
-/* X and O styles */
 .cell.x-mark {
     color: #4facfe;
     text-shadow: 0 0 8px rgba(79, 172, 254, 0.4);

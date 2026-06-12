@@ -25,10 +25,6 @@ header nav a {
     margin: 0 10px;
     font-weight: bold;
     background-image: linear-gradient(to left, rgb(161, 255, 250), rgb(252, 255, 161), rgb(255, 184, 221));
-    /* voor ondersteuning in browsers*/
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
 }
 
 main {
@@ -48,8 +44,4 @@ footer {
 footer h1 {
     font-size: 14px;
     background-image: linear-gradient(to left, rgb(161, 255, 250), rgb(252, 255, 161), rgb(255, 184, 221));
-    /* voor ondersteuning in browsers*/
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
 }

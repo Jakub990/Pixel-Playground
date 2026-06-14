@@ -37,11 +37,11 @@
         <h2>4 Op Een Rij</h2>
         <table class="score-tabel">
             <tr><th>Positie</th><th>Speler</th><th>Streak</th></tr>
-            <tr><td>🥇 1</td><td>RetroGamer</td><td>14</td></tr>
-            <tr><td>🥈 2</td><td>SecretJoe</td><td>8</td></tr>
-            <tr><td>🥉 3</td><td>PixelMan</td><td>7</td></tr>
-            <tr><td>4</td><td>MasterMind</td><td>5</td></tr>
-            <tr><td>5</td><td>GameMaster</td><td>4</td></tr>
+            <tr><td>🥇 1</td><td>RetroGamer</td><td>16</td></tr>
+            <tr><td>🥈 2</td><td>SecretJoe</td><td>12</td></tr>
+            <tr><td>🥉 3</td><td>PixelMan</td><td>9</td></tr>
+            <tr><td>4</td><td>MasterMind</td><td>6</td></tr>
+            <tr><td>5</td><td>GameMaster</td><td>5</td></tr>
         </table>
     </main>
 

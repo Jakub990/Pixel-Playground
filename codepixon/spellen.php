@@ -14,25 +14,27 @@
     </header>
     <main>
         <h1>Spellen</h1>
-        <p> </p>
+        <section class="All-Games">
+            <article class="game-card">
+                <h2>Galgje</h2>
+                <p>Test je woordkennis door de juiste letters te raden voordat je beurten op zijn!</p>
+                <a href="galgje.php" class="play-btn">Speel Galgje</a>
+            </article>
 
-        <article class="game-card">
-            <h2>Galgje</h2>
-            <p>Test je woordkennis door de juiste letters te raden voordat je beurten op zijn!</p>
-            <a href="galgje.php" class="play-btn">Speel Galgje</a>
-        </article>
+            <article class="game-card">
+                <h2>Tic Tac Toe</h2>
+                <p>Speel boter-kaas-en-eieren tegen een vriend op hetzelfde apparaat of daag de computer uit met
+                    toenemende moeilijkheidsgraad!</p>
+                <a href="Tictactoe.php" class="play-btn">Speel Tic Tac Toe</a>
+            </article>
 
-        <article class="game-card">
-            <h2>Tic Tac Toe</h2>
-            <p>Speel boter-kaas-en-eieren tegen een vriend op hetzelfde apparaat of daag de computer uit met toenemende moeilijkheidsgraad!</p>
-            <a href="Tictactoe.php" class="play-btn">Speel Tic Tac Toe</a>
-        </article>
-
-        <article class="game-card">
-            <h2>Vier op een rij</h2>
-            <p>Speel Vier op een rij tegen een vriend op hetzelfde apparaat of daag de computer uit met een slimme bot die steeds moeilijker wordt!</p>
-            <a href="connect4.php" class="play-btn">Speel Vier op een rij</a>
-        </article>
+            <article class="game-card">
+                <h2>Vier op een rij</h2>
+                <p>Speel Vier op een rij tegen een vriend op hetzelfde apparaat of daag de computer uit met een slimme
+                    bot die steeds moeilijker wordt!</p>
+                <a href="connect4.php" class="play-btn">Speel Vier op een rij</a>
+            </article>
+        </section>
     </main>
     <footer>
         <?php include 'partials/footer.php'; ?>

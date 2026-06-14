@@ -23,7 +23,7 @@ main {
     width: 100%;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     color: #4facfe; 
 }
 
@@ -68,8 +68,13 @@ footer h1 {
 }
 
 /* ==========================================================================
-   Knoppen & Algemene UI Elementen
+   Rest
    ========================================================================== */
+.All-Games {
+    display: flex;
+    gap: 5%;
+}
+
 .key-btn {
     width: 40px;
     height: 40px;
@@ -117,9 +122,6 @@ footer h1 {
     background-color: #00f2fe;
 }
 
-/* ==========================================================================
-   Content Blokken & Tabellen
-   ========================================================================== */
 .welkom, .info-sectie, .profiel-blok {
     background-color: #333333;
     padding: 15px;
@@ -196,7 +198,7 @@ footer h1 {
 }
 
 /* ==========================================================================
-   Galgje (Hangman) Styling
+   Galgje Styling
    ========================================================================== */
 #hangman-game {
     max-width: 600px;
@@ -382,7 +384,9 @@ footer h1 {
     transform: translateY(0);
 }
 
-/* Connect 4 (Vier op een rij) Styling */
+/* ==========================================================================
+   Connect 4 styling
+   ========================================================================== */
 #connect4-game {
     max-width: 650px;
     margin: 50px auto;

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixel Playground - Home</title>
+    <title>Home</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
     
     <main>
         <section class="welkom">
-            <h1>Welkom bij Pixel Playground! 🎮</h1>
+            <h1>Welkom bij PIXON! 🎮</h1>
             <p>Ontdek leuke retro-games rechtstreeks in je browser. Speel tegen de computer of bekijk je scores.</p>
             <p>
                 <a href="spellen.php" class="knop">Bekijk Games</a>

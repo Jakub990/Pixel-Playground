@@ -15,7 +15,7 @@
         <h1>Mijn Profiel</h1>
         
         <section class="profiel-blok">
-            <h3>Gebruiker: PixelMaster99 (LVL 12)</h3>
+            <h3>Gebruiker: PixelMan</h3>
             <p><em>"Altijd in voor een potje Tic Tac Toe!"</em></p>
             <p>Status: 🟢 Online</p>
         </section>
@@ -31,8 +31,17 @@
             <h3>Mijn Vrienden</h3>
             <ul>
                 <li>🦊 RetroGamer (In Game)</li>
-                <li>🐱 CodeNinja (Online)</li>
-                <li>🐻 ShadowPlayer (Offline)</li>
+                <li>🐱 GameMaster (Online)</li>
+                <li>🐻 MasterMind (Offline)</li>
+            </ul>
+        </section>
+        
+        <section class="profiel-blok">
+            <h3>Achievements</h3>
+            <ul>
+                <li>🏆 <strong>Tic Tac Toe Koning</strong> - Win 5 potjes achter elkaar</li>
+                <li>🎯 <strong>Scherpschutter</strong> - Raad een woord in Galgje zonder fouten</li>
+                <li>⭐ <strong>Trouwe Gamer</strong> - Speel in totaal meer dan 100 spellen</li>
             </ul>
         </section>
     </main>

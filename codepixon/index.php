@@ -14,7 +14,7 @@
     <main>
         <section class="welkom">
             <h1>Welkom bij PIXON! 🎮</h1>
-            <p>Ontdek leuke retro-games rechtstreeks in je browser. Speel tegen de computer of bekijk je scores.</p>
+            <p>Speel leuke games tegen vrienden of de computer en probeer de highscore te behalen!</p>
             <p>
                 <a href="spellen.php" class="knop">Bekijk Games</a>
                 <a href="scores.php" class="knop">Bekijk Highscores</a>
@@ -24,7 +24,7 @@
         <section class="info-sectie">
             <h2>Wat kun je hier doen?</h2>
             <ul>
-                <li><strong>Klassieke Games:</strong> Speel Tic Tac Toe en Galgje.</li>
+                <li><strong>Games:</strong> Speel Tic Tac Toe, 4 op een Rij en Galgje.</li>
                 <li><strong>Highscores:</strong> Probeer de top 5 te bereiken.</li>
                 <li><strong>Vrienden:</strong> Zie wie er online zijn.</li>
             </ul>
